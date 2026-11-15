@@ -14,7 +14,6 @@ test('labels a passing score', () => {
   expect(resultLabel(85)).toBe('Passed');
 });
 
-/* Temporarily commented out for <80% baseline coverage run
 test('labels a score below the pass mark', () => {
   expect(resultLabel(74)).toBe('Needs improvement');
 });
@@ -30,4 +29,3 @@ test('rejects a negative score', () => {
 test('rejects a score above 100', () => {
   expect(resultLabel(101)).toBe('Invalid score');
 });
-*/
